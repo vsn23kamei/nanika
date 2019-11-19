@@ -1,11 +1,11 @@
-CREATE TABLE public."USER_MASTER"
+CREATE TABLE public."user_master"
 (
-    "USER_ID" text COLLATE pg_catalog."default" NOT NULL,
-    "PASSWORD" text COLLATE pg_catalog."default" NOT NULL,
-    CONSTRAINT "USER_MASTER_pkey" PRIMARY KEY ("USER_ID")
+    "user_id" text COLLATE pg_catalog."default" NOT NULL,
+    "password" text COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT "user_master_pkey" PRIMARY KEY ("user_id")
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE public."USER_MASTER"
+ALTER TABLE public."user_master"
     OWNER to student;

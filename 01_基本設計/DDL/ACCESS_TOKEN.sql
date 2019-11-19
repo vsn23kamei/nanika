@@ -1,14 +1,14 @@
-CREATE TABLE public."ACCESS_TOKEN"
+CREATE TABLE public."access_token"
 (
-    "USER_ID" text COLLATE pg_catalog."default" NOT NULL,
-    "CLIENT_ID" text COLLATE pg_catalog."default" NOT NULL,
-    "ACCESS_TOKEN" text COLLATE pg_catalog."default" NOT NULL,
-    "VALID_DATETIME" timestamp with time zone NOT NULL,
-    "LAST_MODIFIED" timestamp with time zone NOT NULL,
-    CONSTRAINT "ACCESS_TOKEN_pkey" PRIMARY KEY ("USER_ID", "CLIENT_ID")
+    "user_id" text COLLATE pg_catalog."default" NOT NULL,
+    "client_id" text COLLATE pg_catalog."default" NOT NULL,
+    "access_token" text COLLATE pg_catalog."default" NOT NULL,
+    "valid_datetime" timestamp with time zone NOT NULL,
+    "last_modified" timestamp with time zone NOT NULL,
+    CONSTRAINT "access_token_pkey" PRIMARY KEY ("user_id", "client_id")
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE public."ACCESS_TOKEN"
+ALTER TABLE public."access_token"
     OWNER to student;

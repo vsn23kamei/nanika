@@ -1,20 +1,20 @@
-CREATE TABLE public."CLIENT_DETAIL"
+CREATE TABLE public."client_detail"
 (
-    "CLIENT_ID" text COLLATE pg_catalog."default" NOT NULL,
-    "CLIENT_NAME" text COLLATE pg_catalog."default" NOT NULL,
-    "OPEN_FLG" boolean NOT NULL,
-    "USER_NAME_FLG" boolean NOT NULL,
-    "ADDRESS_FLG" boolean NOT NULL,
-    "TEL_NUMBER_FLG" boolean NOT NULL,
-    "MAIL_ADDRESS_FLG" boolean NOT NULL,
-    "ADD_TIMESTAMP_FLG" boolean NOT NULL,
-    "LAST_LOGIN_TIME_FLG" boolean NOT NULL,
-    "MEMOADD_TIMESTAMP" timestamp with time zone NOT NULL,
-    "MEMO" text COLLATE pg_catalog."default",
-    CONSTRAINT "CLIENT_DETAIL_pkey" PRIMARY KEY ("CLIENT_ID")
+    "client_id" text COLLATE pg_catalog."default" NOT NULL,
+    "client_name" text COLLATE pg_catalog."default" NOT NULL,
+    "open_flg" boolean NOT NULL,
+    "user_name_flg" boolean NOT NULL,
+    "address_flg" boolean NOT NULL,
+    "tel_number_flg" boolean NOT NULL,
+    "mail_address_flg" boolean NOT NULL,
+    "add_timestamp_flg" boolean NOT NULL,
+    "last_login_time_flg" boolean NOT NULL,
+    "memoadd_timestamp" timestamp with time zone NOT NULL,
+    "memo" text COLLATE pg_catalog."default",
+    CONSTRAINT "client_detail_pkey" PRIMARY KEY ("client_id")
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE public."CLIENT_DETAIL"
+ALTER TABLE public."client_detail"
     OWNER to student;

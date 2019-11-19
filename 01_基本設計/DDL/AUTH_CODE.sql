@@ -1,14 +1,14 @@
-CREATE TABLE public."AUTH_CODE"
+CREATE TABLE public."auth_code"
 (
-    "USER_ID" text COLLATE pg_catalog."default" NOT NULL,
-    "CLIENT_ID" text COLLATE pg_catalog."default" NOT NULL,
-    "AUTH_CODE" text COLLATE pg_catalog."default" NOT NULL,
-    "VALID_DATETIME" timestamp with time zone NOT NULL,
-    "LAST_MODIFIED" timestamp with time zone NOT NULL,
-    CONSTRAINT "AUTH_CODE_pkey" PRIMARY KEY ("USER_ID", "CLIENT_ID")
+    "user_id" text COLLATE pg_catalog."default" NOT NULL,
+    "client_id" text COLLATE pg_catalog."default" NOT NULL,
+    "auth_code" text COLLATE pg_catalog."default" NOT NULL,
+    "valid_datetime" timestamp with time zone NOT NULL,
+    "last_modified" timestamp with time zone NOT NULL,
+    CONSTRAINT "auth_code_pkey" PRIMARY KEY ("user_id", "client_id")
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE public."AUTH_CODE"
+ALTER TABLE public."auth_code"
     OWNER to student;

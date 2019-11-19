@@ -1,17 +1,17 @@
-CREATE TABLE public."USER_DETAIL"
+CREATE TABLE public."user_detail"
 (
-    "USER_ID" text COLLATE pg_catalog."default" NOT NULL,
-    "USER_NAME" text COLLATE pg_catalog."default" NOT NULL,
-    "ADDRESS" text COLLATE pg_catalog."default",
-    "TEL_NUMBER" integer,
-    "MAIL_ADDRESS" integer,
-    "ADD_TIMESTAMP" date NOT NULL,
-    "LAST_LOGIN_TIME" date NOT NULL,
-    "LAST_MODIFIED" date NOT NULL,
-    CONSTRAINT "USER_DETAIL_pkey" PRIMARY KEY ("USER_ID")
+    "user_id" text COLLATE pg_catalog."default" NOT NULL,
+    "user_name" text COLLATE pg_catalog."default" NOT NULL,
+    "address" text COLLATE pg_catalog."default",
+    "tel_number" integer,
+    "mail_address" integer,
+    "add_timestamp" date NOT NULL,
+    "last_login_time" date NOT NULL,
+    "last_modified" date NOT NULL,
+    CONSTRAINT "user_detail_pkey" PRIMARY KEY ("user_id")
 )
 
 TABLESPACE pg_default;
 
-ALTER TABLE public."USER_DETAIL"
+ALTER TABLE public."user_detail"
     OWNER to student;
